@@ -1,0 +1,73 @@
+input[type="text"],
+input[type="password"]{
+    width: 150px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    padding: 2px;
+}
+input[type="submit"]{
+    width: 75px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    font-family: "Rubik";
+}
+
+body {
+    text-align: center; /* Center align the content */
+    background-color: rgb(15, 15, 15);
+}
+#htitle {
+    font-size: 70px;
+    font-family: "Rubik", Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(
+        to right,
+        rgb(41, 164, 236),
+        #19dbb1
+    );
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+    line-height: 1.5;
+}
+
+#welcomename{
+    font-family: "Rubik", Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(
+        to right,
+        rgb(41, 164, 236),
+        #19dbb1
+    );
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+    line-height: 1.5;
+}
+form {
+    background-color: rgb(228, 228, 228);
+    
+    display: inline-block; /* Display the form as inline-block */
+    text-align: left; /* Align form elements to the left */
+    border: 5px solid rgb(228, 228, 228); /* Add a 1px solid border around the form */
+    border-radius: 10px;
+    padding: 20px; /* Add padding inside the border */
+    background-color: rgb(228, 228, 228);
+    font-family: "Rubik"
+}
+/* Add animation keyframes */
+@keyframes dropdown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to form */
+#loginForm,#htitle,#welcomename {
+    animation: dropdown 0.8s ease-out;
+}
+
+
